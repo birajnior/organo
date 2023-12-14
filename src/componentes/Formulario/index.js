@@ -23,7 +23,7 @@ const Formulario = (props) => {
     setImagem("");
     setTime("");
   };
-
+  
   return (
     <section className="formulario">
       <form onSubmit={aoSalvar}>
