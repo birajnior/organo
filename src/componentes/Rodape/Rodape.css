@@ -1,37 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Prata&display=swap');
 
 .rodape {
+  height: 8rem;
   background-color: #6278F7;
   display: flex;
   justify-content: space-between;
-  padding: 4rem;
+  padding: 3rem;
   background-image: url(/public/images/fundo.png);
   background-position: center;
   background-repeat: no-repeat;
   align-items: center;
   color: #FFFFFF;
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   line-height: normal;
   font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
 }
 
 .logos {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  justify-content: space-around;
+  list-style: none;
+  box-sizing: border-box;
+  gap: 1.2rem;
 }
 
-.logos img {
-  width: 1.5rem;
-  height: 1.5rem;
-  padding: .3rem;
+.icon {
+  color: #FFFFFF;
+  height: 1.6rem;
 }
 
-.rodape>img {
+.icon:hover{
+  opacity: 0.4;
+}
+
+.logo img {
   width: 11rem;
-  height: 3rem;
 }
-

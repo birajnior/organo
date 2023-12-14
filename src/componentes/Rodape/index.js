@@ -1,52 +1,39 @@
 import "./Rodape.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebook,
+  faInstagram,
+  faXTwitter,
+} from "@fortawesome/free-brands-svg-icons";
 
 const Rodape = () => {
   return (
     <footer className="rodape">
-      <section className="logos">
-        <img src="/images/fb.png" alt="Icon Facebook" />
-        <img src="/images/tw.png" alt="Icon Twitter" />
-        <img src="/images/ig.png" alt="Icon Instagram" />
+      <section>
+        <ul className="logos">
+          <li>
+            <a href="https://facebook.com" target="_blank" rel="noreferrer">
+              <FontAwesomeIcon icon={faFacebook} className="icon"/>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/home" target="_blank" rel="noreferrer">
+              <FontAwesomeIcon icon={faXTwitter} className="icon"/>
+            </a>
+          </li>
+          <li>
+            <a href="https://instagram.com" target="_blank" rel="noreferrer">
+              <FontAwesomeIcon icon={faInstagram} className="icon"/>
+            </a>
+          </li>
+        </ul>
       </section>
-      <img src="/images/logo.png" alt="Logo Organo" />
+      <section className="logo">
+        <img src="/images/logo.png" alt="Logo Organo" />
+      </section>
       <p>Desenvolvido por Alura.</p>
     </footer>
   );
 };
 
 export default Rodape;
-
-//src/componentes/Rodape/index.js
-// const Rodape = () => {
-//     return (<footer className="footer">
-//         <section>
-//             <ul>
-//                 <li>
-//                     <a href="facebook.com" target="_blank">
-//                         <img src="/imagens/facebook.png" alt="" />
-//                     </a>
-//                 </li>
-//                 <li>
-//                     <a href="twitter.com" target="_blank">
-//                         <img src="/imagens/twitter.png" alt="" />
-//                     </a>
-//                 </li>
-//                 <li>
-//                     <a href="instagram.com" target="_blank">
-//                         <img src="/imagens/instagram.png" alt="" />
-//                     </a>
-//                 </li>
-//             </ul>
-//         </section>
-//         <section>
-//             <img src="/imagens/logo.png" alt="" />
-//         </section>
-//         <section>
-//             <p>
-//                 Desenvolvido por Alura.
-//             </p>
-//         </section>
-//     </footer>)
-// }
-
-// export default Rodape
