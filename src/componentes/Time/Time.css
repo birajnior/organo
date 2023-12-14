@@ -3,6 +3,8 @@
 .time {
   text-align: center;
   padding: 2rem;
+  background-image: url(/public/images/fundo.png);
+  background-size: cover;
 }
 
 .time h3 {
@@ -16,4 +18,11 @@
   border-bottom: 0.25rem solid ;
   display: inline-block;
   padding-bottom: 0.5rem;
+}
+
+.time .colaboradores{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+  flex-wrap: wrap;
 }
